@@ -184,7 +184,6 @@ li{
 }
 #box4 h2{	
 	margin-top : 0;
-	margin-bottom : 20px;
 }
 #box4-1{
 	width : 45%;
@@ -200,7 +199,7 @@ li{
     -moz-box-flex: 1;
     box-flex: 1;
     -webkit-flex: 1 1 auto;
-    flex: 1 1 auto; 	
+    flex: auto auto auto auto; 	
 	max-width:100%;
 }
 #separator{
@@ -219,7 +218,9 @@ li{
 	-webkit-flex-direction: row;
     flex-direction: row;
 }
-
+#box4-2 h2{
+	margin-bottom : 0;
+}
 #input1 {
 	height : 20px;
 	width : 49%;	
@@ -227,25 +228,28 @@ li{
 	border-radius : 5px;
 	border : 1px solid transparent;
 }
-#input5 {
+#input5 ,#input6{
 	height : 20px;
 	width : 100%;
 	margin-bottom : 20px;
 	border-radius : 5px;
 	border : 1px solid transparent;
 }
-#input6 {
-	height : 80px;
-	width : 100%;
-	margin-bottom : 20px;
-	border-radius : 5px;
-	border : 1px solid transparent;
-}
+
 textarea{
 	height : 200px;
 	width : 100%;
 	border-radius : 5px;
 	border : 1px solid transparent;
+	margin-bottom : 20px;
+}
+#bouton-valid{
+	height : 30px;
+	width : 100%;
+	border-radius : 5px;
+	border : 1px solid transparent;
+	background-color : #3498db;
+	color : white;
 }
 
 /**************************/
@@ -263,6 +267,10 @@ textarea{
 	#box4-2{
 		width : 100%;
 	}
+	#box4-2 h2{
+		width : 100%;
+		margin-bottom : 20px;
+	}
 	#input1{
 		width : 100%;
 	}
@@ -276,25 +284,25 @@ textarea{
 	#logo{
 		position : initial;
 		height : 50px;
-	}
+		background-position : 50% 50%;
+	}	
 	#items{
-		display : none;
-		
+		display : none;		
 	}
 	#burger{	
-		display :block;
+		display : block;
 		width : 50px;
 		height : 50px;
 		background-image : url('../img/glyphicons-114-justify.png');
-		background-size : cover;
 		background-repeat : no-repeat;
+		background-position : 50% 50%;
 	}
 	#tel{
 		width : 50px;
 		height : 50px;
 		background-image : url('../img/glyphicons-443-earphone.png');
-		background-size : cover;
 		background-repeat : no-repeat;
+		background-position : 50% 50%;
 	}
 }
 
@@ -331,6 +339,9 @@ textarea{
 	#bar-search{
 		margin-left : 0;
 		padding-left : 15px;
+	}
+	#box4-2 h2{
+		margin-bottom : 20px;
 	}
 }
 

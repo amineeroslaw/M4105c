@@ -1,3 +1,6 @@
+/*o*-----------------------*o*/
+/*Géolocalisation Google Maps*/
+/*o*-----------------------*o*/
 
 	var previousPosition = null;
    
@@ -34,5 +37,5 @@
         newLine.setMap(map);
       }
       previousPosition = position;
-    };	
-	
+    };
+

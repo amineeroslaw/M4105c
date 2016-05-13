@@ -275,9 +275,11 @@ textarea{
 	}
 	#logo{
 		position : initial;
+		height : 50px;
 	}
 	#items{
 		display : none;
+		
 	}
 	#burger{	
 		display :block;

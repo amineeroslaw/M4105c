@@ -39,3 +39,24 @@
       previousPosition = position;
     };
 
+
+	$(document).ready(function() {
+
+		$("burger").click(function(e) {
+			e.stopPropagation();
+			if($("#humburger").hasClass("inactive")) {
+				$(this).removeClass("inactive");
+				$(this).addClass("active");
+			}
+			else if($("#humburger").hasClass("active")){
+				$(this).removeClass("active");
+				$(this).addClass("inactive")
+			}
+		});
+
+		$("html").click(function(e) {
+			$("humburger").removeClass("active");
+			$(this).addClass("inactive")			
+		});
+
+	});

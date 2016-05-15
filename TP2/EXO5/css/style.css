@@ -8,6 +8,12 @@ a{
 li{
 	list-style-type: none;
 }
+.active{
+	display : flex;
+}
+.inactive{
+	display : none;
+}
 .pull-left{
 	float : left;
 }
@@ -280,7 +286,6 @@ textarea{
 
 @media screen and (max-width: 760px){
 	#humburger {
-		display : flex;
 		background-color : #bdc3c7;
 		margin-top : -20px;
 		margin-bottom : 20px;

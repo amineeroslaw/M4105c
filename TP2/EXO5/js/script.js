@@ -51,6 +51,14 @@ $(document).ready(function(){
 				$("#humburger").removeClass("active");
 				$("#humburger").addClass("inactive");
 			}
+			if($("#burger").hasClass("imgburger")){				
+				$("#burger").removeClass("imgburger");
+				$("#burger").addClass("imgdelburger");
+			}
+			else if($("#burger").hasClass("imgdelburger")){
+				$("#burger").removeClass("imgdelburger");
+				$("#burger").addClass("imgburger");
+			}
 		});
 
 		$("section").click(function(e) {
@@ -58,6 +66,10 @@ $(document).ready(function(){
 				$("#humburger").removeClass("active");
 				$("#humburger").addClass("inactive");
 			}			
+			if($("#burger").hasClass("imgdelburger")){
+				$("#burger").removeClass("imgdelburger");
+				$("#burger").addClass("imgburger");
+			}
 		});
 
 	});

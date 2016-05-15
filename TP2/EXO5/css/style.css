@@ -14,6 +14,16 @@ li{
 .inactive{
 	display : none;
 }
+.imgburger{
+	background-image : url('../img/glyphicons-114-justify.png');
+	background-repeat : no-repeat;
+	background-position : 50% 50%;
+}
+.imgdelburger{
+	background-image : url('../img/glyphicons-208-remove.png');
+	background-repeat : no-repeat;
+	background-position : 50% 50%;
+}
 .pull-left{
 	float : left;
 }
@@ -112,11 +122,6 @@ li{
 #tel{
 	display ; none;
 }
-
-/*****************/
-/****HUMBERGER****/
-/*****************/
-
 
 /*****************/
 /****BOX IMAGE****/
@@ -341,9 +346,6 @@ textarea{
 		display : block;
 		width : 50px;
 		height : 50px;
-		background-image : url('../img/glyphicons-114-justify.png');
-		background-repeat : no-repeat;
-		background-position : 50% 50%;
 	}
 	#tel{
 		width : 50px;

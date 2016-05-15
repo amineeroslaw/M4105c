@@ -39,24 +39,25 @@
       previousPosition = position;
     };
 
+$(document).ready(function(){
 
-	$(document).ready(function(){
-
-		$("burger").click(function(e) {
+		$("#burger").click(function(e) {
 			e.stopPropagation();
-			if($("#humburger").hasClass("inactive")) {
+			if($("#humburger").hasClass("inactive")) {				
 				$("#humburger").removeClass("inactive");
 				$("#humburger").addClass("active");
 			}
 			else if($("#humburger").hasClass("active")){
 				$("#humburger").removeClass("active");
-				$("#humburger").addClass("inactive")
+				$("#humburger").addClass("inactive");
 			}
 		});
 
 		$("html").click(function(e) {
-			$("humburger").removeClass("active");
-			$("#humburger").addClass("inactive")			
+			if($("#humburger").hasClass("active")){
+				$("#humburger").removeClass("active");
+				$("#humburger").addClass("inactive");
+			}			
 		});
 
 	});

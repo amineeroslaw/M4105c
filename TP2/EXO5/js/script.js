@@ -53,7 +53,7 @@ $(document).ready(function(){
 			}
 		});
 
-		$("html").click(function(e) {
+		$("section").click(function(e) {
 			if($("#humburger").hasClass("active")){
 				$("#humburger").removeClass("active");
 				$("#humburger").addClass("inactive");

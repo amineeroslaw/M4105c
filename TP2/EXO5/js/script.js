@@ -40,23 +40,23 @@
     };
 
 
-	$(document).ready(function() {
+	$(document).ready(function(){
 
 		$("burger").click(function(e) {
 			e.stopPropagation();
 			if($("#humburger").hasClass("inactive")) {
-				$(this).removeClass("inactive");
-				$(this).addClass("active");
+				$("#humburger").removeClass("inactive");
+				$("#humburger").addClass("active");
 			}
 			else if($("#humburger").hasClass("active")){
-				$(this).removeClass("active");
-				$(this).addClass("inactive")
+				$("#humburger").removeClass("active");
+				$("#humburger").addClass("inactive")
 			}
 		});
 
 		$("html").click(function(e) {
 			$("humburger").removeClass("active");
-			$(this).addClass("inactive")			
+			$("#humburger").addClass("inactive")			
 		});
 
 	});

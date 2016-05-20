@@ -38,8 +38,12 @@
       }
       previousPosition = position;
     };
+	
+/*o*-----------------------*o*/
+/*o********Humberger********o*/
+/*o*-----------------------*o*/
 
-$(document).ready(function(){
+	$(document).ready(function(){
 
 		$("#burger").click(function(e) {
 			e.stopPropagation();
@@ -72,4 +76,60 @@ $(document).ready(function(){
 			}
 		});
 
+		$("#bouton-valid").click(function(e) {
+			var v1 = $('#input1').val();
+			var v2 = $('#input2').val();
+			var v3 = $('#input3').val();
+			var v4 = $('#input4').val();
+			var v5 = $('#input5').val();
+			var v6 = $('#input6').val();
+			var v7 = $('#textarea').val();
+			if(v1.length > 0 && v2.length > 0 && v3.length > 0 && v4.length > 0 && v5.length > 0 && v6.length > 0 && v7.length > 0){
+				localStorage.v1 = v1;
+				localStorage.v2 = v2;
+				localStorage.v3 = v3;
+				localStorage.v4 = v4;
+				localStorage.v5 = v5;
+				localStorage.v6 = v6;
+				localStorage.v7 = v7;
+				if(typeof localStorage!='undefined'){
+					if('v1' in localStorage && 'v2' in localStorage && 'v3' in localStorage && 'v4' in localStorage && 'v5' in localStorage && 'v6' in localStorage && 'v7' in localStorage) {
+						$("#s1").html(v1);
+						$("#s2").html(v2);
+						$("#s3").html(v3);
+						$("#s4").html(v4);
+						$("#s5").html(v5);
+						$("#s6").html(v6);
+						$("#s7").html(v7);
+					}
+				} 
+				else{
+					alert("sessionStorage n'est pas supporté");
+				}
+			}			
+		});	
+
+		if($("#old-form").hasClass("inactive")) {
+			$("#lib").html("Afficher");
+		}		
+		
+		$("#show-old-form").click(function(e) {
+			e.stopPropagation();
+			if($("#old-form").hasClass("inactive")) {	
+				$("#lib").html("Cacher");
+				$("#old-form").removeClass("inactive");
+				$("#old-form").addClass("show");
+			}
+			else if($("#old-form").hasClass("show")){
+				
+				$("#lib").html("Afficher");
+				$("#old-form").removeClass("show");
+				$("#old-form").addClass("inactive");
+			}			
+		});
+		
+		
 	});
+
+	
+
